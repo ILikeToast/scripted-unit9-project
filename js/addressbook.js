@@ -15,6 +15,7 @@ $(document).ready(function()
 		for (key in contacts) 
 		{
 			// Create new contact-row
+			console.log(key, contacts);
 			if ($("#results .contact-row").length == 0 || $("#results .contact-row").last().children().length == 3)
 			{
 				$("#results").append($('templates .contact-row').clone());
